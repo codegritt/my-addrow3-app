@@ -1,37 +1,37 @@
+<div class="container">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>first_name</th>
+        <th>last_name</th>
+        <th>email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dynamic of dynamicArray; let i = index;">
+        <td>
+          <input [(ngModel)]="dynamicArray[i].title1" class="form-control" type="number" />
+        </td>
+        <td>
+          <input [(ngModel)]="dynamicArray[i].title1" class="form-control" type="text" />
+        </td>
+        <td>
+          <input [(ngModel)]="dynamicArray[i].title2" class="form-control" type="text" />
+        </td>
+        <td>
+          <input [(ngModel)]="dynamicArray[i].title3" class="form-control" type="text" />
+        </td>
+        <td (click)="addRow(i)">
+          <i class="fa fa-plus fa-2x"></i>
+        </td>
+        <td (click)="deleteRow(i)">
+          <i class="fa fa-trash fa-2x"></i>
+        </td>
 
+      </tr>
 
-
-<div class="container" >    
-    <table class="table table-bordered">    
-        <thead>    
-            <tr>    
-                <th>first_name</th>    
-                <th>last_name</th>    
-                <th>email</th>    
-                <th>Action</th>    
-            </tr>    
-        </thead>    
-        <tbody>    
-             <tr *ngFor="let dynamic of dynamicArray; let i = index;">    
-              <td (click)="deleteRow(i)">    
-                <i class="fa fa-trash fa-2x"></i>    
-              </td>    
-                <td>    
-                  <input [(ngModel)]="dynamicArray[i].title1" class="form-control" type="text" />    
-                </td>    
-                <td>    
-                  <input [(ngModel)]="dynamicArray[i].title2" class="form-control" type="text" />    
-                </td>    
-                <td>    
-                  <input [(ngModel)]="dynamicArray[i].title3" class="form-control" type="text"/>    
-                </td>    
-            </tr>    
-            <tr>    
-              <td (click)="addRow(i)">    
-                <i class="fa fa-plus fa-2x"></i>    
-              </td>  
-                
-            </tr>    
-        </tbody>    
-    </table>    
-  </div>  
+    </tbody>
+  </table>
+</div>
