@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 //import { ToastrService } from 'ngx-toastr';  
 
 import { Child } from '../shared/child.true';
@@ -8,7 +9,7 @@ import { Child } from '../shared/child.true';
   styleUrls: ['./master-child.component.css']
 })
 export class MasterChildComponent implements OnInit {
-
+userForm: FormGroup
   constructor() { }
   dynamicArray: Array<Child> = [];  
   newDynamic: any = {};  
