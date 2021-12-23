@@ -1,5 +1,63 @@
+<div class="card">
+  <form [formGroup]="userForm">
+    <div class="mt-5 box">
+      <div class="form-row">
+
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+            <label>Id</label>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input type="number" formcontrolnName="id" class="form-control" placeholder="id">
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+            <label>Firstname</label>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" formcontrolnName="first_name" class="form-control" placeholder="first_name">
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+            <label>Lastname</label>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" formcontrolnName="last_name" class="form-control" placeholder="last_name">
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="col-md-12">
+          <div class="form-group mt-4">
+            <label>Email</label>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" formcontrolnName="email" class="form-control" placeholder="email">
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+
+
 <div class="container">
-  <table class="table table-bordered">
+  <table class="table-bordered">
     <thead>
       <tr>
         <th>ID</th>
@@ -15,21 +73,22 @@
           <input [(ngModel)]="dynamicArray[i].title1" class="form-control" type="number" />
         </td>
         <td>
-          <input [(ngModel)]="dynamicArray[i].title1" class="form-control" type="text" />
-        </td>
-        <td>
           <input [(ngModel)]="dynamicArray[i].title2" class="form-control" type="text" />
         </td>
         <td>
           <input [(ngModel)]="dynamicArray[i].title3" class="form-control" type="text" />
         </td>
-        <td (click)="addRow(i)">
-          <i class="fa fa-plus fa-2x"></i>
-        </td>
-        <td (click)="deleteRow(i)">
-          <i class="fa fa-trash fa-2x"></i>
+        <td>
+          <input [(ngModel)]="dynamicArray[i].title4" class="form-control" type="text" />
         </td>
 
+        <td><button type="button" mat-raised-button color="primary" class="btn btn-primary"
+            (click)="addRow()">Add</button>
+        </td>
+
+        <td><button type="button" mat-raised-button color="primary" class="btn btn-primary"
+            (click)="deleteRow()">Delete</button>
+        </td>
       </tr>
 
     </tbody>
