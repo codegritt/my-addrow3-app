@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-//import { ToastrService } from 'ngx-toastr';  
+
 
 import { Child } from '../shared/child.true';
 @Component({
@@ -21,18 +21,15 @@ userForm: FormGroup
   addRow(index) {    
     this.newDynamic = {title1: "", title2: "",title3:""};  
     this.dynamicArray.push(this.newDynamic);  
-  //  this.toastr.success('New row added successfully', 'New Row');  
     console.log(this.dynamicArray);  
     return true;  
 }  
   
 deleteRow(index) {  
-    if(this.dynamicArray.length ==1) {  
-    //  this.toastr.error("Can't delete the row when there is only one row", 'Warning');  
+    if(this.dynamicArray.length ==1) {   
         return false;  
     } else {  
         this.dynamicArray.splice(index, 1);  
-     //   this.toastr.warning('Row deleted successfully', 'Delete row');  
         return true;  
     }  
 }  
