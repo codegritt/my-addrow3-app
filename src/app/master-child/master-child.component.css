@@ -1,13 +1,17 @@
+
 .card{
     width:30%;
     border: 1px solid rgb(145, 138, 138);
     border-radius: 5px;
     padding:10px;
     margin-left: 300px;
+    font-size: 15px;
+    background-color: lightgray;
+
 }
 
 .table-bordered{
-    width: 600px;
+    width: auto;
     
     border-collapse: collapse;
     margin: 25px 0;
@@ -17,17 +21,23 @@
   
   td, th {
     
-    text-decoration: underline;
+   
     height: 5px;
   }
 
   .table-bordered thead tr{
+    text-decoration: underline;
       background-color:lightgrey;
       text-align: center;
   }
+
+
   .table-bordered th,
   .table-bordered td{
-      padding: 12px 15px;
+      padding: 0px;
+      margin: 0px;
+      height: 5px;
+      
   }
   .table-bordered tbody tr{
 border-bottom: light grey;
@@ -35,4 +45,4 @@ border-bottom: light grey;
   .table-bordered tbody tr:nth-of-type(even){
     background-color:lightgrey;
   }
-  
+
