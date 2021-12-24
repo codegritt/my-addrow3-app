@@ -42,7 +42,4 @@
   .table-bordered tbody tr{
 border-bottom: light grey;
   }
-  .table-bordered tbody tr:nth-of-type(even){
-    background-color:lightgrey;
-  }
-
+ 
