@@ -7,6 +7,8 @@
 }
 
 .table-bordered{
+    width: 600px;
+    
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
@@ -14,7 +16,7 @@
   }
   
   td, th {
-    border: 1px solid black;
+    
     text-decoration: underline;
     height: 5px;
   }
@@ -33,3 +35,4 @@ border-bottom: light grey;
   .table-bordered tbody tr:nth-of-type(even){
     background-color:lightgrey;
   }
+  
